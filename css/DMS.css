@@ -1,0 +1,92 @@
+﻿body {
+}
+
+#MainContent_updatepaneldoc {
+min-height:550px;
+}
+
+#SearchDocument {
+display:none;
+}
+.dmsaction { 
+    height:30px !important;
+}
+
+
+.frmProjectDocs {
+display:none;
+margin-left:0px !important;
+}
+
+.frmOtherDocs {
+display:none;
+margin-left:0px !important;
+
+}
+
+.frmAction{
+display:none;
+}
+
+[id*=txtDoucumentSearch] {
+width:1010px;
+}
+
+.UploadContainer {
+margin-bottom:20px;
+margin-left:14%;
+}
+.action {
+line-height:normal !important;
+}
+.projectDetails {
+padding-left:0px !important;
+}
+
+.doctitle {
+width:220px;
+height:50px !important;
+}
+.docdesc {
+width:320px;
+height:50px !important;
+}
+.txtUpload {
+    width:180px;
+}
+.docOthertitle {
+    width:280px;
+}
+.docOtherdesc {
+width:410px;
+}
+.txtOtherUpload {
+    width:235px;
+}
+.DocsUpload {
+margin-left:-15px !important;
+}
+.ProjectDocs {
+    padding-left: 10px;
+}
+.iframecss {
+    height:35px;
+}
+.uploadaction {
+    padding-top:8px !important;
+}
+.requireddoc {
+color:#f30;
+}
+.ProjectDocDetails {
+padding-left:0px !important;
+}
+#DocumentUpload {
+    margin-left:0px !important;
+}
+.removeslide {
+     margin-left:0px !important;
+}
+.frmDetails1,.frmDetails2,.frmDetails3 {
+    margin-top:9px;
+}

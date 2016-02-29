@@ -1,0 +1,43 @@
+﻿body {
+}
+.user-access {
+            margin-bottom: 2em;
+            padding: 0px;
+            background-color: #efefef;
+            border: solid 1px #ccc;
+            padding-bottom: 10px;
+            min-height: 200px;
+            max-height:200px;
+            overflow:auto;
+
+}
+
+.user-access h3 {
+    padding: 10px;
+    background-color: #dfdfdf;
+    position: absolute;
+    width: 92%;
+    z-index: 999;
+}
+
+.user-access h3 input[type="checkbox"] {
+    margin-right: 0.5em;
+    background-color: #0C6;
+    position:relative;
+     border-collapse: collapse;
+}
+
+.user-access ul li {
+    padding: 5px 10px;
+}
+
+.user-access li input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+.parentcheckbox {
+}
+.user-access ul {
+  /*ist-style: none;
+  padding: 0;*/
+  margin-top: 40px;
+}

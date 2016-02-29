@@ -1,0 +1,148 @@
+/* For Fix Grid Header on report you have to maintain same left and right padding and margin*/
+.GridView
+{
+    font-size: 12px;
+    width: 100%;
+    border-collapse: collapse;
+    border-width: 0px;
+    border: 1px solid #b1c6c9;
+}
+.GridView .header
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 1px;
+    padding-right: auto;
+    border: 1px solid #b1c6c9;
+    background-color: #578e91;
+    color: #ffffff;
+}
+.GridView th
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 1px;
+    padding-right: auto;
+    border: 1px solid #9ab4b8;
+    background-color: #2c485d;
+    color: #ffffff;
+}
+
+.GridView td
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 1px;
+    padding-right: auto;
+    border: 1px solid #b1c6c9;
+    border-collapse: collapse;
+    color: Black;
+}
+.GridView .alt
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 1px;
+    padding-right: auto;
+    background-repeat: repeat-x;
+    background-position: top;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.GridView .EmptyRow
+{
+    background-color: #ffffff;
+}
+
+.GridView .ftr
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 1px;
+    padding-right: auto;
+    color: #ffffff;
+    background-color: #ebf0f2;
+    font-weight: bold;
+}
+
+.GridView .pgr
+{
+    background-color: #c7d4d6;
+}
+.GridView .pgr table
+{
+    margin: 5px 0;
+}
+.GridView .pgr td
+{
+    border-width: 0;
+    padding: 0 6px;
+    border-left: solid 1px #b3b3b3;
+    font-weight: bold;
+    color: #0098b0;
+    line-height: 12px;
+}
+.GridView .pgr a
+{
+    color: #515050;
+    text-decoration: none;
+}
+.GridView .pgr a:hover
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+
+.GvTourSearch
+{
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-collapse: collapse;
+}
+.GvTourSearch th
+{
+    padding: 3px;
+    background-color: transparent;
+    border: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: White;
+}
+.GvTourSearch td
+{
+    padding: 3px;
+    border: 0;
+    color: #1E404A;
+    font-size: 12px;
+}
+.GvTourSearch .pgr
+{
+    background-color: #c7d4d6;
+}
+.GvTourSearch .pgr table
+{
+    margin: 5px 0;
+}
+.GvTourSearch .pgr td
+{
+    border-width: 0;
+    padding: 0 6px;
+    border-left: solid 1px #b3b3b3;
+    font-weight: bold;
+    color: #0098b0;
+    line-height: 12px;
+}
+.GvTourSearch .pgr a
+{
+    color: #515050;
+    text-decoration: none;
+}
+.GvTourSearch .pgr a:hover
+{
+    color: #000000;
+    text-decoration: none;
+}

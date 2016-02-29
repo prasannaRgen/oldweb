@@ -1,0 +1,28 @@
+﻿th.headerSortUp { 
+    background-image: url(../images/desc.png) !important; 
+    background-position: center right !important; 
+    background-repeat: no-repeat; 
+} 
+
+th.headerSortDown { 
+    background-image: url(../images/asc.png) !important; 
+    background-position: center right !important; 
+    background-repeat: no-repeat; 
+    
+}
+
+th.header { 
+
+    background-image: url(../images/sort.png);
+    background-position: center right !important; 
+    background-repeat: no-repeat;  
+    background-size:15px 8px;
+    /*background-image: url(../images/bg.gif); 
+    cursor: pointer; 
+
+    background-repeat: no-repeat; 
+    background-position: center left; 
+    padding-left: 20px; 
+    border-right: 1px solid #dad9c7; 
+    margin-left: -1px;*/ 
+}

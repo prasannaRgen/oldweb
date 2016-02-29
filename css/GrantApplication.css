@@ -1,0 +1,16 @@
+﻿  .pi {
+            margin-right: 0px !important;
+            float: right;
+        }
+        /*.frmGrant {
+        display:block !important;
+        }*/
+        .duration {
+        height:53.57px !important;
+        }
+        /*.parentprojectId{
+           height: 123.57px! important;
+        }*/
+        .i_GrantType_ID,.i_Grant_SubType_ID,.i_Grant_Sub_SubType_ID,.i_Grant_Sub_Sub_SubType_ID,.i_AwardOrganization{
+            width:350px! important;
+    }

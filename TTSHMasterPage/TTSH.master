@@ -1,0 +1,182 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="TTSH.master.cs" Inherits="TTSHMasterPage_TTSH" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tan Tock Seng Hospital - A Community of Care</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+    <link href="../css/jquery-ui.css" rel="stylesheet" />
+    <link href="../css/normalize.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <link href="../css/custom.css" rel="stylesheet" />
+    <link href="../css/tableSorter.css" rel="stylesheet" />
+    <link href="../App_Themes/default.css" rel="stylesheet" />
+    <link href="../css/ModelPopUp.css" rel="stylesheet" />
+    <link href="../css/jQ-UI-Dialog.css" rel="stylesheet" />
+ 
+      <script src="../Scripts/vendor/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-ui.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+  
+    <script src="../Scripts/jquery.tablesorter.min.js" type="text/javascript"></script>
+<script src="../Scripts/Webform/jquery.blockUI.js" type="text/javascript"></script>
+<script src="Scripts/Common.js" type="text/javascript"></script>
+<script src="Scripts/Pagemethods.js" type="text/javascript"></script>
+<script src="Scripts/vendor/modernizr-2.8.3.min.js" type="text/javascript"></script>
+
+    <%--    <script src="/opt/app-root/src/Scripts/vendor/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="/opt/app-root/src/Scripts/jquery-ui.js" type="text/javascript"></script>
+    <script src="/opt/app-root/src/Scripts/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+  
+    <script src="/opt/app-root/src/Scripts/jquery.tablesorter.min.js" type="text/javascript"></script>
+<script src="/opt/app-root/src/Scripts/Webform/jquery.blockUI.js" type="text/javascript"></script>
+<script src="/opt/app-root/src/Scripts/Common.js" type="text/javascript"></script>
+<script src="/opt/app-root/src/Scripts/Pagemethods.js" type="text/javascript"></script>
+<script src="/opt/app-root/src/Scripts/vendor/modernizr-2.8.3.min.js" type="text/javascript"></script>--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    <form id="form1" runat="server"
+        enctype="multipart/form-data">
+        <asp:HiddenField runat="server" ID="_repostcheckcode" />
+        <label id="lblTime" runat="server" style="display: none"></label>
+        <asp:ScriptManager ID="ToolkitScriptManager1" EnablePageMethods="true" EnablePartialRendering="true"
+            LoadScriptsBeforeUI="false" AsyncPostBackTimeout="360000"
+            ScriptMode="Release"
+            runat="server">
+            <Scripts>
+             <asp:ScriptReference Path="../Scripts/vendor/jquery-1.11.2.min.js" />
+             <asp:ScriptReference Path="../Scripts/jquery-migrate-1.2.1.min.js" />
+             <asp:ScriptReference Path="../Scripts/jquery.tablesorter.min.js" />
+             <asp:ScriptReference Path="../Scripts/Webform/jquery.blockUI.js" />
+             <asp:ScriptReference Path="../Scripts/vendor/modernizr-2.8.3.min.js" />
+            </Scripts>
+        </asp:ScriptManager>
+
+        <header>
+            <div style="background-color: #333333; padding: 0px; height: 5px;"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a class="logo-head img-responsive" href="#">
+                            <img src="Images/TanTockSeng-Hospital-Logo.jpg" alt="Clinical Research &amp; Innovation (CRIO)" /></a>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="top-search">
+                        </p>
+                        <a class="adapNav" href="#">
+                            <img src="Images/icon-dashboard.png" alt="Microsoft Service Center Menu" /></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="nav-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+                            <asp:Menu ID="UserMenu" runat="server" StaticEnableDefaultPopOutImage="false" Orientation="Horizontal"
+                                MaximumDynamicDisplayLevels="3" CssClass="msc-nav" >
+
+                                <StaticMenuItemStyle HorizontalPadding="10px" ItemSpacing="1px" VerticalPadding="5px"
+                                    CssClass="dropmenudiv" />
+
+                                <StaticHoverStyle ForeColor="white" BackColor="#333333" CssClass="parent" />
+                                <DynamicMenuItemStyle CssClass="msc-nav" />
+                                <DynamicHoverStyle CssClass="msc-nav" />
+
+                            </asp:Menu>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+        <div id="body">
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <section class="content-wrapper main-content clear-fix">
+
+
+
+                <asp:ContentPlaceHolder runat="server" ID="MainContent">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                    </div>
+                </asp:ContentPlaceHolder>
+
+            </section>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Clinical Research &amp; Innovation (CRIO) Database System</h4>
+                            <p>Website: http://www.ttsh.com.sg  Phone: (65) 6357 8898/9  Fax: (65) 6251 4095</p>
+                            <p>11 Jalan Tan Tock Seng, Singapore 308433</p>
+                        </div>
+                        <div class="col-md-6 align-right">
+                            <h4>A Product of Tan Tock Seng Hospital</h4>
+                            <p>Copyright &copy; 2015 Tan Tock Seng Hospital, Singapore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <asp:Button ID="btnLogout" OnClick="btnLogout_Click" runat="server" Style="display: none" Text="Button" />
+        <asp:HiddenField ID="hdnUserName" runat="server" />
+    </form>
+    <script type="text/javascript">
+        //window.setTimeout("ShowTime()", 1000);
+        //function scrlsts() {
+        //    scrl = scrl.substring(1, scrl.length) + scrl.substring(0, 1);
+        //}
+        //function ShowTime() {
+        //    var dt = new Date();
+        //    var shortdt = dt.format('dddd, dd/MMM/yyyy');
+        //    document.getElementById("lblTime").innerHTML = dt.toLocaleTimeString();
+        //    window.setTimeout("ShowTime()", 1000);
+        //}
+    </script>
+    <div id="dialog-message"></div>
+
+        <script src="Scripts/plugins.js" type="text/javascript"></script>
+        <script src="Scripts/main.js"" type="text/javascript"></script>
+  
+    <%--   <script src="/opt/app-root/src/Scripts/plugins.js" type="text/javascript"></script>
+        <script src="/opt/app-root/src/Scripts/main.js"" type="text/javascript"></script>--%>
+
+</body>
+
+
+
+    <script type="text/javascript">
+        if (typeof window.event != 'undefined') {
+            document.onkeydown = function () { return IE_keydown(); }
+        }
+        else {
+            document.onkeypress = function (e) {
+                return Other_keypress(e);
+            }
+        }
+    </script>
+</html>
